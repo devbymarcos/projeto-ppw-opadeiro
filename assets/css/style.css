@@ -122,7 +122,6 @@ img {
 
 .sobre {
   width: 100%;
-  height: 100vh;
 }
 .title-sobre {
   padding: 5rem;
@@ -156,4 +155,44 @@ img {
   position: absolute;
   top: 10%;
   right: -60%;
+}
+
+/*
+###############
+### PRODUTO ###
+###############
+*/
+.title-produtos {
+  padding: 5rem 5rem 1rem 5rem;
+}
+
+.title-produtos h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #343333;
+}
+.box-text-produtos {
+  width: 100%;
+  padding: 1rem 8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.item-produtos {
+  width: 100%;
+  height: 360px;
+}
+
+.item-produtos img {
+  width: 100%;
+  height: 100%;
+}
+.box-produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.item-produtos:nth-child(1) {
+  grid-row: 1 / span 2;
+  height: 725px;
 }
