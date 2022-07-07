@@ -13,11 +13,16 @@
 .logo-sobre {
   margin-bottom: 3rem;
 }
-
+/*add*/
+.content-sobre {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/*add*/
 .box-text-sobre {
   width: 100%;
-  height: 870px;
-  margin: 0 97px;
+  min-height: 650px; /*add*/
+  /* removido marmgin */
   max-width: 630px;
   padding: 2rem 6rem;
   background-color: #fff;
@@ -29,8 +34,8 @@
 }
 
 .loja-sobre {
-  width: 500px;
+  width: 400px;
   position: absolute;
-  top: 10%;
-  right: -60%;
+  top: 7%;
+  right: -39%; /*alter*/
 }

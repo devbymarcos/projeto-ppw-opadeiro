@@ -8,7 +8,7 @@
 /*add*/
 .header.scroll {
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 /*add*/
 .header-content {
@@ -21,8 +21,13 @@
 .logo {
   width: 180px;
 }
+
 .navbar {
   height: 100%;
+  transition: all 0.5s;
+}
+.navbar.active {
+  display: block;
 }
 .navbar ul {
   display: flex;
@@ -42,4 +47,49 @@
 }
 .navbar ul li a:hover {
   border-bottom-color: #3dc8e7;
+}
+
+.btn-mobile {
+  display: none;
+  cursor: pointer;
+}
+.btn-mobile i {
+  font-size: 2rem;
+  color: #fff;
+}
+@media (max-width: 760px) {
+  .navbar {
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+  }
+  .header {
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .logo {
+    width: 100%;
+    align-self: flex-start;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-content {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar ul li a:hover {
+    border-bottom-color: transparent;
+    background-color: rgb(37, 37, 37);
+  }
+  .navbar ul li a {
+    font-size: 1.2rem;
+  }
+  .btn-mobile {
+    display: block;
+  }
 }

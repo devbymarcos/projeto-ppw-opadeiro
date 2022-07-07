@@ -17,13 +17,17 @@
         <div class="header-content">
           <div class="logo">
             <img src="./assets/image/padeiro-logo-white.png" alt="" />
+            <div class="btn-mobile">
+              <i class="fas fa-bars"></i>
+            </div>
           </div>
+
           <nav class="navbar">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#produtos">Produto</a></li>
-              <li><a href="#contato">Contato</a></li>
+              <li onclick="closeMenu()"><a href="#home">Home</a></li>
+              <li onclick="closeMenu()"><a href="#sobre">Sobre</a></li>
+              <li onclick="closeMenu()"><a href="#produtos">Produto</a></li>
+              <li onclick="closeMenu()"><a href="#contato">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -64,31 +68,31 @@
         <div class="title-sobre">
           <h1>Mais sobre a gente</h1>
         </div>
-
-        <div class="box-text-sobre">
-          <img
-            class="logo-sobre"
-            src="./assets/image/logo-sobre.png"
-            alt="logo"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            consectetur posuere eleifend. Duis faucibus iaculis lectus ut
-            blandit. Aenean ut dapibus mauris, ac venenatis odio. Aliquam sit
-            amet purus non ex interdum pharetra sit amet et tortor. Pellentesque
-            sodales imperdiet blandit. Mauris nec ornare erat. In dapibus felis
-            a nibh sagittis ullamcorper. Pellentesque sollicitudin sagittis
-            pretium. amet purus non ex interdum pharetra sit amet et tortor.
-            Pellentesque sodales imperdiet blandit. Mauris nec ornare erat. In
-            dapibus felis a nibh sagittis ullamcorper. Pellentesque sollicitudin
-            sagittis pretium.
-          </p>
-          <img
-            class="loja-sobre"
-            src="./assets/image/loja-sobre.png"
-            alt="loja"
-          />
-        </div>
+        <article class="content-sobre">
+          <div class="box-text-sobre">
+            <img
+              class="logo-sobre"
+              src="./assets/image/logo-sobre.png"
+              alt="logo"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              consectetur posuere eleifend. Duis faucibus iaculis lectus ut
+              blandit. Aenean ut dapibus mauris, ac venenatis odio. Aliquam sit
+              amet purus non ex interdum pharetra sit amet et tortor.
+              Pellentesque sodales imperdiet blandit. Mauris nec ornare erat. In
+              dapibus felis a nibh sagittis ullamcorper. Pellentesque
+              sollicitudin sagittis pretium. amet purus non ex interdum pharetra
+              sit amet et tortor. Pellentesque sodales imperdiet blandit. Mauris
+              nec ornare erat. In dapibus felis a
+            </p>
+            <img
+              class="loja-sobre"
+              src="./assets/image/loja-sobre.png"
+              alt="loja"
+            />
+          </div>
+        </article>
       </div>
     </section>
     <section id="produtos" class="produtos">
@@ -203,5 +207,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
