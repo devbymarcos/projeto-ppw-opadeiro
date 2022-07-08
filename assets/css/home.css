@@ -11,12 +11,21 @@
 
 .text-home {
   width: 100%;
-  max-width: 670px;
   height: 100vh;
   position: absolute;
-  top: 30%;
-  left: 17%;
+  top: 0;
+  left: 0;
 }
+
+/*add*/
+.text-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+/*add*/
 
 .text-home h1 {
   color: #fff;
@@ -53,5 +62,11 @@
 @keyframes topDown {
   to {
     transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 760px) {
+  .text-home h1 {
+    font-size: 3rem; /*add*/
   }
 }

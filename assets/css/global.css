@@ -5,12 +5,16 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  scroll-margin-top: 100px;
 }
-
+@media (max-width: 890px) {
+  * {
+    scroll-margin-top: 60px;
+  }
+}
 body {
   background-color: #e7e6e6;
 }
-
 img {
   max-width: 100%;
 }

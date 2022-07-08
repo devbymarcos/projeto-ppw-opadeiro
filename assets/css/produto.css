@@ -43,3 +43,20 @@
   font-size: 1.9rem;
   font-weight: bold;
 }
+
+@media (max-width: 690px) {
+  .title-produtos {
+    padding: 3rem 1rem;
+  }
+  .title-produtos h1 {
+    font-size: 2rem;
+  }
+  .box-text-produtos {
+    padding: 1rem 1rem;
+    text-align: left;
+  }
+
+  .box-produtos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

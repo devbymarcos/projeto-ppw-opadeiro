@@ -22,7 +22,7 @@
 .box-text-sobre {
   width: 100%;
   min-height: 650px; /*add*/
-  /* removido marmgin */
+  /* removido margin */
   max-width: 630px;
   padding: 2rem 6rem;
   background-color: #fff;
@@ -38,4 +38,24 @@
   position: absolute;
   top: 7%;
   right: -39%; /*alter*/
+}
+
+@media (max-width: 890px) {
+  .loja-sobre {
+    position: initial;
+  }
+  .box-text-sobre {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+  .box-text-sobre p {
+    width: 100%;
+    line-height: 2.3rem;
+  }
+  .title-sobre {
+    padding: 3rem;
+  }
+  .title-sobre h1 {
+    font-size: 2rem;
+  }
 }
