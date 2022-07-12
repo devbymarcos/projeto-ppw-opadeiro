@@ -5,9 +5,10 @@
   padding: 3rem; /*add*/
   transition: all 0.5s; /*add*/
 }
+
 /*add*/
 .header.scroll {
-  padding: 1rem;
+  padding: 0 1rem;
   background-color: #000;
 }
 /*add*/
@@ -34,7 +35,6 @@
 }
 .navbar ul {
   display: flex;
-  /* gap: 0.5rem; */
   height: 100%;
 }
 .navbar ul li {
